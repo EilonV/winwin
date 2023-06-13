@@ -6,32 +6,88 @@
     align-items: center;
     flex-direction: column;
 
-    img {
+    .logo {
         width: 195px;
         height: 186px;
     }
 
     .balls {
         display: flex;
-        flex-direction: row;
+        position: absolute;
+        bottom: 83px;
 
         .ball {
-            margin: 0 -2px;
+            margin: 0 -1px;
             height: 21px;
             width: 21px;
             border-radius: 50%;
+            background-color: $light-pink;
+            z-index: 1;
+        }
+
+        .ball3 {
             background-color: $pink;
+        }
+
+        .ball-connector-wrapper {
+            position: absolute;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            gap: 5px;
+            right: 10%;
+            top: 15%;
 
             .ball-connector {
-
-                height: 10px;
-                width: 17px;
-                background-color: $pink;
-                border-radius: 0px;
+                height: 14px;
+                width: 20px;
+                display: flex;
+                border-radius: 5px 5px;
+                background-color: $light-pink;
             }
+        }
+
+        .ball2,
+        .ball-connector2 {
+            animation: load 0.5s 1s 1 forwards;
+        }
+
+        .ball1,
+        .ball-connector1 {
+            animation: load 0.5s 2s 1 forwards;
+        }
+
+        @keyframes load {
+            to {
+                background: $pink;
+            }
+        }
+
+
+
+    }
+
+    p {
+        opacity: 0;
+    }
+
+    .p1 {
+        animation: load-p 1s 1 forwards ease-in-out;
+    }
+
+    .p2 {
+        animation: load-p 1s 1s 1 forwards ease-in-out;
+    }
+
+    .p3 {
+        animation: load-p 1s 2s 1 forwards ease-in-out;
+    }
+
+    @keyframes load-p {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
         }
     }
 
