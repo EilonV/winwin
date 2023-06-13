@@ -1,0 +1,46 @@
+.loader {
+    display: flex;
+    background-color: $gray5;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        width: 195px;
+        height: 186px;
+    }
+
+    .balls {
+        display: flex;
+        flex-direction: row;
+
+        .ball {
+            margin: 0 -2px;
+            height: 21px;
+            width: 21px;
+            border-radius: 50%;
+            background-color: $pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .ball-connector {
+
+                height: 10px;
+                width: 17px;
+                background-color: $pink;
+                border-radius: 0px;
+            }
+        }
+    }
+
+    p {
+        position: absolute;
+        font-family: SimplerB;
+        bottom: 0;
+        right: 0;
+        padding: 32px 28px;
+        color: $pink;
+    }
+}
