@@ -1,6 +1,7 @@
 // SETUP
 @import 'setup/_variables';
 @import 'setup/_mixins.scss';
+@import 'setup/_animations.scss';
 
 // BASICS
 @import 'basics/_base';
@@ -11,7 +12,20 @@
 @import 'setup/_fonts';
 
 // CMPS
-@import 'components/_loader.scss';
+
+// REGISTER
+@import 'components/register/_user-info.scss';
+@import 'components/register/_email.scss';
+@import 'components/register/_personal.scss';
+@import 'components/register/_wishlist.scss';
+@import 'components/register/_giveback.scss';
+
 
 // PAGES
+@import 'views/_loader.scss';
 @import 'views/_home.scss';
+@import 'views/_success.scss';
+@import 'views/_test.scss';
+@import 'views/_intro.scss';
+@import 'views/_register.scss';
+@import 'views/_login.scss';

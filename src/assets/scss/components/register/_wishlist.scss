@@ -1,0 +1,97 @@
+.wishlist {
+    direction: rtl;
+    font-size: 18px;
+    line-height: 24px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+
+
+
+    .swiper {
+        max-width: 235px;
+        height: fit-content;
+        // overflow: visible;
+        overflow-clip-margin: 50px;
+
+        .swiper-slide-next {
+            // transform: translate(20px, -20px);
+            // z-index: -1;
+        }
+
+        .swiper-slide {
+            transition: 0.3s;
+
+            &:not(.swiper-slide-active) {
+                filter: blur(1px) opacity(0.5);
+            }
+        }
+
+        .swiper-slide-active {
+            transform: translateY(-10px);
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            z-index: 1;
+            bottom: -20px;
+            pointer-events: none;
+
+            .swiper-pagination-bullet-active {
+                background-color: $pink !important;
+                height: 10px;
+                width: 10px;
+                transition: 0.3s;
+            }
+
+            .swiper-pagination-bullet {
+                background-color: $light-pink;
+                height: 10px;
+                width: 10px;
+                transition: 0.3s;
+                opacity: 1;
+            }
+        }
+    }
+
+    p:first-child {
+        font-size: 16px;
+    }
+
+    form {
+        border-radius: 14px;
+        box-shadow: -3.607724905014038px 3.607724905014038px 3.607724905014038px 0px rgba(255, 255, 255, 0.40) inset, 3.607724905014038px -3.607724905014038px 3.607724905014038px 0px rgba(182, 182, 182, 0.40) inset;
+        border: 2px solid $red;
+        // padding: 0 14px;
+
+        background: #F9F8FD;
+    }
+
+    .input-wrapper {
+        background-color: white;
+        border-radius: 14px 14px 0 0;
+        height: 50px;
+        padding: 10px 13px;
+        // width: 225px;
+    }
+
+    input {
+        max-width: 200px;
+        margin-bottom: 10px;
+        height: 33px;
+    }
+
+    textarea {
+        resize: none;
+        max-width: 200px;
+        height: 220px;
+        padding: 9px 12px;
+        margin: 15px 2px 20px 2px;
+        border-radius: 24px;
+    }
+
+    button {
+        padding: 2px 16px;
+    }
+}

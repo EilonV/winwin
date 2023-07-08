@@ -72,6 +72,10 @@
     align-items: center;
   }
 
+  &.align-bottom {
+    align-items: flex-end;
+  }
+
   &.space-between {
     justify-content: space-between;
   }

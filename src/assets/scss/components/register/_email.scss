@@ -1,0 +1,54 @@
+.register-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 41px;
+    // padding-top: 95px;
+
+    .header {
+        gap: 7px;
+
+        h1 {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .google-reg {
+        p {
+            margin-bottom: 5px;
+        }
+    }
+
+    .existing-acc {
+        p {
+            margin-bottom: 5px;
+        }
+
+        a {
+            font-size: 22px;
+            text-decoration: underline;
+            color: $pink;
+            font-family: SimplerB;
+        }
+    }
+
+    .input {
+        gap: 15px;
+
+        input {
+            // margin-bottom: 10px;
+            text-align: left;
+        }
+    }
+}

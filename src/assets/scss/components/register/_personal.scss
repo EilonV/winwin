@@ -1,0 +1,25 @@
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    direction: rtl;
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-top: 37px;
+    }
+
+    input.active {
+        background-color: white;
+        color: $red;
+        border: 1px solid $red ;
+
+        &::placeholder {
+            color: $red;
+        }
+    }
+}

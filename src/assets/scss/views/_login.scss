@@ -1,0 +1,61 @@
+.login {
+    height: 100vh;
+    gap: 31px;
+    transition: 0.3s;
+
+    h1 {
+        font-size: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        p {
+            font-size: 15px;
+            color: $pink;
+            font-family: SimplerB;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                color: $pink-dark;
+
+            }
+        }
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    a {
+        // text-decoration: underline;
+        font-family: SimplerB;
+        color: $pink;
+        font-size: 18px;
+        border-bottom: 2px solid $pink;
+        transition: 0.3s;
+
+        &:hover {
+            color: $pink-dark;
+            border-bottom: 2px solid $pink-dark;
+
+        }
+    }
+
+    .input-after {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .input-after:after {
+        content: "טעות";
+        text-align: right;
+        display: block;
+        // background-color: black;
+        height: 5px;
+    }
+}

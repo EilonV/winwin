@@ -1,0 +1,6 @@
+1. add special cases for wrong inputs
+2. check if password and password again is the same ✅✅✅
+3. add animations to registeration
+4. think of where to store register data (probably localstorage)
+5. add sign in with google
+6. add city api autocomplete
