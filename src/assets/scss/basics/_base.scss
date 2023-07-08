@@ -3,9 +3,17 @@
 }
 
 html {
-    transition: 0.1s;
+    transition: 0.2s;
     height: 100vh;
     font-family: Simpler;
+    background-color: $gray5;
+
+    user-select: none;
+
+    ::selection {
+        background: $pink;
+        color: white;
+    }
 }
 
 body {
@@ -24,6 +32,7 @@ h3,
 h4,
 h5 {
     margin: 0;
+    direction: rtl;
 }
 
 li {
@@ -32,4 +41,148 @@ li {
 
 ul {
     padding-inline-start: 0;
+}
+
+button {
+    background-color: $pink;
+    font-family: Simpler;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    padding: 2px 12px;
+    gap: 9px;
+    border-radius: 35px;
+    height: 33px;
+    transition: 0.2s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $pink2;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    &:active {
+        box-shadow: 0px 4px 4px 0px rgba(77, 77, 77, 0.25) inset;
+        background-color: $light-pink;
+    }
+
+    &.l-button {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 10px 17px;
+    }
+
+    &:disabled {
+        background-color: $extra-light-pink;
+
+        &:hover {
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+    }
+}
+
+input,
+textarea {
+    display: flex;
+    border-radius: 39px;
+    padding: 10px 20px;
+    border: 1px solid $pink ;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Simpler;
+    background-color: transparent;
+    color: $black;
+    transition: 0.3s;
+    width: 330px;
+    height: 55px;
+    text-align: right;
+
+    &::placeholder {
+        color: $gray3;
+        text-align: right;
+    }
+
+    &:focus {
+        outline: 2px solid $pink ;
+        transition: 0s;
+    }
+}
+
+.input-wrapper {
+    transition: 0.3s;
+
+    &.error {
+        position: relative;
+        animation: shake 0.5s 1 ease;
+
+        input {
+            background-color: $white;
+
+            &::placeholder {
+                color: $red;
+            }
+        }
+
+        &:after {
+            position: absolute;
+            right: 20px;
+            bottom: -15px;
+            font-size: 14px;
+            color: $red;
+        }
+
+        &.email:after {
+            content: "כתובת אימייל שגויה";
+        }
+
+        &.password-aut:after {
+            content: "הסיסמאות אינן תואמות";
+        }
+
+        &.password:after {
+            content: "סיסמא שגויה";
+        }
+
+        &.required:after {
+            content: "שדה חובה";
+        }
+    }
+
+    input {
+
+        &:disabled {
+            background-color: $gray4;
+            border: 1px solid var(--grays-gray-3, #CCC8D6);
+
+            &::placeholder {
+                color: $gray3;
+            }
+        }
+    }
+
+    @keyframes shake {
+        20% {
+            transform: translateX(-10px);
+        }
+
+        40% {
+            transform: translateX(10px);
+        }
+
+        60% {
+            transform: translateX(-5px);
+        }
+
+        80% {
+            transform: translateX(5px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
 }
