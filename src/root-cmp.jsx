@@ -18,7 +18,7 @@ function App() {
       <Route path='/test' element={<Tests />} />
       <Route path='/success' element={<Successful />} />
     </Routes>
-  );
+  )
 }
 
 export default App;
