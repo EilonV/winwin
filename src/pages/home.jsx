@@ -1,6 +1,5 @@
-
 export const Home = () => {
-    return <section>
-        <p>HOME</p>
+    return <section className="home">
+
     </section>
 }

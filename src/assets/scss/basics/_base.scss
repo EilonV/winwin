@@ -209,3 +209,16 @@ textarea {
         }
     }
 }
+
+.back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.3s;
+    padding: 15px;
+
+    &:hover {
+        cursor: pointer;
+        transform: translateX(5px);
+    }
+}

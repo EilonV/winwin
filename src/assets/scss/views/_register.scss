@@ -11,15 +11,4 @@
         // height: 52px;
     }
 
-    .back {
-        position: absolute;
-        top: 0;
-        right: 0;
-        transition: 0.3s;
-        padding: 20px;
-        &:hover {
-            cursor: pointer;
-            transform: translateX(5px);
-        }
-    }
 }

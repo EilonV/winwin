@@ -6,6 +6,7 @@ import { Intro } from './pages/intro';
 import { Tests } from './pages/tests';
 import { Successful } from './pages/successful-register';
 import { Loader } from './pages/loader';
+import { Profile } from './pages/profile';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/intro' element={<Intro />} />
       <Route path='/test' element={<Tests />} />
       <Route path='/success' element={<Successful />} />
+      <Route path='/profile' element={<Profile />} />
     </Routes>
   )
 }

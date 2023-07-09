@@ -1,13 +1,14 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { useRef} from 'react';
+import { useRef } from 'react';
 
 export const Wishlist = (props) => {
 
     const swiperRef = useRef();
 
     let wishlist = []
+
     const handleInputs = () => {
         let forms = document.querySelectorAll('.wishlist-form ');
         if (!wishlist.length)
@@ -41,7 +42,14 @@ export const Wishlist = (props) => {
             }, 1500);
     }
 
-    return (<div className="wishlist" ref={props.wishlistRef}>
+    const goBack = () => {
+        document.querySelector('.personal-info').style = 'flex'
+        props.wishlistRef.current.style = 'none'
+        document.querySelector('.register-pagination-prog').style.width = " 33%"
+
+    }
+    return (<div className="wishlist wishlist1" ref={props.wishlistRef}>
+        <img className="back" src={props.arrow} alt="back button" onClick={goBack} />
         <p>מה ברצונך לקבל?</p>
         <p>
             טקסט זה יופיע בפרופיל שלך תחת הכותרת

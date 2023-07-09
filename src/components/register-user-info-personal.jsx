@@ -1,3 +1,4 @@
+
 export const PersonalInfo = (props) => {
     const handleUserInput = (e) => {
         e.preventDefault()
@@ -12,7 +13,7 @@ export const PersonalInfo = (props) => {
                 props.personalRef.current.style = "display:none";
                 props.wishlistRef.current.style = "display:flex";
                 document.querySelector('.register-pagination-prog').style.width = " 66%"
-            }, 1500);
+            }, 1000);
         }
         else {
             props.addError(e.target[2], 'password-aut')
@@ -20,8 +21,12 @@ export const PersonalInfo = (props) => {
         }
     }
 
-    return <form className='inputs' onSubmit={handleUserInput} ref={props.personalRef} autoComplete="off">
-        <img className="back" src={props.arrow} alt="" />
+    const goBack = () => {
+        window.location.reload()
+    }
+
+    return <form className='inputs personal-info' onSubmit={handleUserInput} ref={props.personalRef} autoComplete="off">
+        <img className="back" src={props.arrow} alt="back button" onClick={goBack} />
         <p>פרטים אישיים</p>
         <div className="input-wrapper">
             <input type="text" name="name" placeholder='שם פרטי ושם משפחה' required="required" autoComplete="new-password" aria-autocomplete="none" />

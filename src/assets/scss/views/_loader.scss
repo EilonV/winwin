@@ -21,15 +21,15 @@
                 width: 54.128px;
                 height: 36.717px;
                 animation: dissapear 1s 1s forwards;
-                -webkit-animation: dissapear 1s 1s forwards;
+                // -webkit-animation: dissapear 1s 1s forwards;
             }
         }
 
         @keyframes w-margin {
             to {
-                // margin: 0 -9px;
-                margin-left: -35px;
-                margin-right: -35px;
+                margin: 0 -9px;
+                // margin-left: -35px;
+                // margin-right: -35px;
             }
         }
 
@@ -42,7 +42,10 @@
             100% {
                 opacity: 0;
                 // z-index: -1;
-                // width: 0em;
+                width: 0;
+                // visibility: hidden;
+                // display: none !important;
+                // height: 0;
                 // inline-size: 0;
                 // margin: 0 -25px;
                 // display: none;

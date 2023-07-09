@@ -12,6 +12,8 @@
 @import 'setup/_fonts';
 
 // CMPS
+// PROFILE
+@import 'components/profile/_user-info.scss';
 
 // REGISTER
 @import 'components/register/_user-info.scss';
@@ -29,3 +31,4 @@
 @import 'views/_intro.scss';
 @import 'views/_register.scss';
 @import 'views/_login.scss';
+@import 'views/_profile.scss';

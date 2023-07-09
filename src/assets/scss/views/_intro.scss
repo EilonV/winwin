@@ -6,6 +6,8 @@
     p {
         font-family: SimplerB;
         color: $pink;
+        font-size: 20px;
+        margin: 20px;
     }
 
     .balls {
@@ -69,14 +71,73 @@
     }
 
 
+
     .swiper {
         width: 100%;
         height: fit-content;
         position: inherit;
         // transform: rotate(180deg);
         direction: rtl;
-        img {
-            margin-bottom: 60px;
+
+        // img {
+        //     margin-bottom: 60px;
+        // }
+        button {
+            opacity: 0;
+        }
+
+        .swiper-slide-active {
+            button {
+                opacity: 0;
+                // transform: translateY(50px);
+                animation: show 1s 1s 1 forwards ease;
+            }
+
+            .highfive {
+                transition: 0.5s;
+
+                .logo-head {
+                    animation: highfive 0.7s 1s 1 forwards ease;
+                }
+
+                // .logo-head-highfiving {
+                //     // opacity: 0;
+                //     display: none;
+                //     // position: absolute;
+                //     animation: five 0.7s 1s 1 forwards ease;
+                //     // transform: translateY(100%);
+                //     // content: url('../../pics/money.png');
+                // }
+
+                .logo-body {
+                    height: 42px;
+                    // width: 100%;
+                    animation: shorten 0.5s 1s 1 forwards ease;
+                }
+
+            }
+        }
+
+        @keyframes highfive {
+            to {
+                opacity: 0;
+                transform: translateY(70%);
+                content: url('../../pics/logo/heads-highfive.svg');
+                opacity: 1;
+            }
+        }
+
+        @keyframes show {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes shorten {
+            to {
+                opacity: 0;
+            }
+
         }
 
         .swiper-button-next,

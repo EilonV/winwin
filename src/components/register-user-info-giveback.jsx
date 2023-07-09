@@ -40,7 +40,16 @@ export const Giveback = (props) => {
             navigate('/success')
         }, 1000);
     }
+
+    const goBack = () => {
+        document.querySelector('.wishlist1').style.display = 'flex'
+        console.log(props);
+        props.givebackRef.current.style.display = 'none'
+        document.querySelector('.register-pagination-prog').style.width = " 66%"
+
+    }
     return <div className="wishlist" ref={props.givebackRef}>
+        <img className="back" src={props.arrow} alt="back button" onClick={goBack} />
         <p>מה ברצונך לקבל?</p>
         <p>
             טקסט זה יופיע בפרופיל שלך תחת הכותרת
