@@ -30,6 +30,7 @@ export const Giveback = (props) => {
             ...newUser,
             giveback: giveback,
         }))
+        console.log(giveback);
         completeRegister()
     }
 

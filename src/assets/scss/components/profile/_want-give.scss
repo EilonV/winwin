@@ -1,0 +1,100 @@
+.want-give {
+    background-color: $gray4;
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    direction: rtl;
+    height: fit-content;
+    padding: 30px 40px;
+    min-height: 560px;
+    gap: 220px;
+
+    p {
+        font-size: 18px;
+        font-family: SimplerB;
+        margin-bottom: 20px;
+    }
+
+    .want,
+    .give {
+        position: relative;
+        display: flex;
+
+        .card {
+            position: relative;
+            background-color: #F9F8FB;
+            height: 200px;
+            border: 1px solid $green;
+            border-radius: 10px;
+            width: 150px;
+            box-shadow: -2.6600000858306885px 2.6600000858306885px 2.6600000858306885px 0px rgba(255, 255, 255, 0.40) inset, 2.6600000858306885px -2.6600000858306885px 2.6600000858306885px 0px rgba(182, 182, 182, 0.40) inset;
+            position: absolute;
+            right: 0;
+            transition: 0.3s;
+
+            &.wish,
+            &.to-give {
+                // position: absolute;
+                // right: 0;
+                transition: 0.3s;
+
+                h1 {
+                    color: $green;
+                    background-color: white;
+                    font-size: 15px;
+                    padding: 10px 20px;
+                    border-radius: 10px 10px 0 0;
+                }
+
+                p {
+                    font-family: Simpler;
+
+                    padding: 22px;
+                    font-size: 14px;
+                    height: 100%;
+                }
+            }
+
+            &.to-give {
+                h1 {
+                    color: $red;
+                }
+            }
+
+            // &.to-give {
+            //     // position: absolute;
+            //     // right: 0;
+            //     transition: 0.3s;
+
+            //     h1 {
+            //         color: $green;
+            //         background-color: white;
+            //         font-size: 15px;
+            //         padding: 10px 20px;
+            //         border-radius: 10px 10px 0 0;
+            //     }
+
+            //     p {
+            //         font-family: Simpler;
+
+            //         padding: 22px;
+            //         font-size: 14px;
+            //         height: 100%;
+            //     }
+            // }
+
+            &.active {
+                transform: translateY(-15px);
+                z-index: 20 !important;
+            }
+        }
+    }
+
+    .give {
+
+        .card {
+            border: 1px solid $red;
+
+        }
+    }
+}

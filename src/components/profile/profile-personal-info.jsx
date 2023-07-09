@@ -4,8 +4,7 @@ import facebook from '../../assets/pics/faceb.svg'
 import instagram from '../../assets/pics/insta.svg'
 import location from '../../assets/pics/locat.svg'
 import avatar from '../../assets/pics/avatar.svg'
-export const ProfilePersonal = () => {
-    const user = localStorageService.loadFromStorage('user')
+export const ProfilePersonal = (props) => {
     return <div className="personal-info">
         <div className="profile-base flex space-between">
             <div className="personal-desc flex align-center">
@@ -16,12 +15,12 @@ export const ProfilePersonal = () => {
             </div>
             <div className="info-pic flex align-center">
                 <div className="name-city-count">
-                    <p className="name">{user.name}</p>
-                    <p className="city">{user.city}</p>
+                    <p className="name">{props.user.name}</p>
+                    <p className="city">{props.user.city}</p>
                     <p className="barter-count">14 ברטרים</p>
                 </div>
                 <div className="profile-pic-wrapper">
-                    <img className="avatar" src={user.img ? user.img : avatar} alt="" />
+                    <img className="avatar" src={props.user.img ? props.user.img : avatar} alt="" />
                     <img className="heart" src={heart} alt="" />
                 </div>
             </div>

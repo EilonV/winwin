@@ -1,0 +1,24 @@
+.recommendations {
+    min-height: 500px;
+
+    h1 {
+        font-size: 20px;
+        padding: 10px 40px;
+    }
+
+    .recommends {
+        p {
+            background-color: #F9F6FF;
+            padding: 22px 35px;
+            border-top: 0.01em solid #CCC8D6;
+        }
+
+        :last-child {
+            border-bottom: 0.01em solid #CCC8D6;
+        }
+    }
+
+    button {
+        margin: 40px 0;
+    }
+}
