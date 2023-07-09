@@ -118,6 +118,7 @@ textarea {
     &.error {
         position: relative;
         animation: shake 0.5s 1 ease;
+        -webkit-animation: shake 0.5s 1 ease;
 
         input {
             background-color: $white;
@@ -183,6 +184,28 @@ textarea {
 
         100% {
             transform: translateX(0);
+        }
+    }
+
+    @-webkit-keyframes shake {
+        20% {
+            -webkit-transform: translateX(-10px);
+        }
+
+        40% {
+            -webkit-transform: translateX(10px);
+        }
+
+        60% {
+            -webkit-transform: translateX(-5px);
+        }
+
+        80% {
+            -webkit-transform: translateX(5px);
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
         }
     }
 }
