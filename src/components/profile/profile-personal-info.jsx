@@ -1,4 +1,3 @@
-import { localStorageService } from "../../services/localstorage"
 import heart from '../../assets/pics/heart-icon.svg'
 import facebook from '../../assets/pics/faceb.svg'
 import instagram from '../../assets/pics/insta.svg'
