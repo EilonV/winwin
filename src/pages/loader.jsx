@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 
 export const Loader = () => {
     const navigate = useNavigate()
-    // setTimeout(() => {
-    //     navigate('/login')
-    // }, 8000);
+    setTimeout(() => {
+        navigate('/login')
+    }, 8000);
 
     return <section className="loader">
         <div className='logo-with-text flex column'>
