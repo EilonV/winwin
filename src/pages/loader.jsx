@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 
 export const Loader = () => {
     const navigate = useNavigate()
-    setTimeout(() => {
-        navigate('/login')
-    }, 8000);
+    // setTimeout(() => {
+    //     navigate('/login')
+    // }, 8000);
 
     return <section className="loader">
         <div className='logo-with-text flex column'>
@@ -22,7 +22,7 @@ export const Loader = () => {
 
             </div>
             <div className='text-under-logo'>
-                <p>            ,עסקים קטנים
+                <p>עסקים קטנים,
                     <br />
                     <span>אנשים גדולים</span></p>
             </div>
