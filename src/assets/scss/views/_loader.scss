@@ -14,7 +14,7 @@
                 width: 98.272px;
                 height: 58.951px;
                 animation: w-margin 0.5s 1s 1 forwards;
-                -webkit-animation: w-margin 0.5s 1s 1 forwards;
+                // -webkit-animation: w-margin 0.5s 1s 1 forwards;
             }
 
             .in {
@@ -27,15 +27,13 @@
 
         @keyframes w-margin {
             to {
-                margin: 0 -9px;
+                // margin: 0 -9px;
+                margin-left: -35px;
+                margin-right: -35px;
             }
         }
 
-        @-webkit-keyframes w-margin {
-            to {
-                margin: 0 -9px;
-            }
-        }
+
         @keyframes dissapear {
             20% {
                 opacity: 0;
@@ -45,7 +43,7 @@
                 opacity: 0;
                 // z-index: -1;
                 // width: 0em;
-                inline-size: 0;
+                // inline-size: 0;
                 // margin: 0 -25px;
                 // display: none;
             }
