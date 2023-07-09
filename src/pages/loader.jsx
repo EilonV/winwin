@@ -1,12 +1,12 @@
 import wlogo from '../assets/pics/logo/w-logo.svg'
 import inlogo from '../assets/pics/logo/in-logo.svg'
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 export const Loader = () => {
-    const navigate = useNavigate()
-    setTimeout(() => {
-        navigate('/login')
-    }, 8000);
+    // const navigate = useNavigate()
+    // setTimeout(() => {
+    //     navigate('/login')
+    // }, 8000);
 
     return <section className="loader">
         <div className='logo-with-text flex column'>

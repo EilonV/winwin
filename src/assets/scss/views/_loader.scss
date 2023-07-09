@@ -14,16 +14,23 @@
                 width: 98.272px;
                 height: 58.951px;
                 animation: w-margin 0.5s 1s 1 forwards;
+                -webkit-animation: w-margin 0.5s 1s 1 forwards;
             }
 
             .in {
                 width: 54.128px;
                 height: 36.717px;
-                animation: dissapear 1s 1s forwards;
+                -webkit-animation: dissapear 1s 1s forwards;
             }
         }
 
         @keyframes w-margin {
+            to {
+                margin: 0 -9px;
+            }
+        }
+
+        @-webkit-keyframes w-margin {
             to {
                 margin: 0 -9px;
             }
@@ -36,9 +43,24 @@
 
             100% {
                 opacity: 0;
-                // width: 0;
-                margin: 0 -25px;
-                display: none;
+                // z-index: -1;
+                width: 0px;
+                // margin: 0 -25px;
+                // display: none;
+            }
+        }
+
+        @-webkit-keyframes dissapear {
+            20% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+                // z-index: -1;
+                width: 0px;
+                // margin: 0 -25px;
+                // display: none;
             }
         }
     }
