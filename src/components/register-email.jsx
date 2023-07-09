@@ -50,7 +50,7 @@ export const RegisterEmail = (props) => {
         </div>
         <div className='existing-acc flex column justify-center align-center'>
             <p>יש לך כבר חשבון? למה לא אמרת</p>
-            {/* <a href="">להתחברות</a> */}
+            <a href={'/login'}>להתחברות</a>
         </div>
     </div>
 } 
