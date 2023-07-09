@@ -20,6 +20,7 @@
             .in {
                 width: 54.128px;
                 height: 36.717px;
+                animation: dissapear 1s 1s forwards;
                 -webkit-animation: dissapear 1s 1s forwards;
             }
         }
@@ -44,7 +45,7 @@
             100% {
                 opacity: 0;
                 // z-index: -1;
-                width: 0px;
+                width: 0em;
                 // margin: 0 -25px;
                 // display: none;
             }
