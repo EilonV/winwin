@@ -51,11 +51,11 @@ export const Giveback = (props) => {
     }
     return <div className="wishlist" ref={props.givebackRef}>
         <img className="back" src={props.arrow} alt="back button" onClick={goBack} />
-        <p>מה ברצונך לקבל?</p>
+        <p>מה באפשרותך לתת?</p>
         <p>
             טקסט זה יופיע בפרופיל שלך תחת הכותרת
             <br />
-            <span> "רצוי" </span>
+            <span> "מצוי" </span>
             ויהיה גלוי למבקרים בו.
             אפשר להזין
             <br />

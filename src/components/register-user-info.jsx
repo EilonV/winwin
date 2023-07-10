@@ -21,6 +21,5 @@ export const RegisterUserInfo = (props) => {
         <Wishlist setNewUser={props.setNewUser} wishlistRef={wishlistRef} givebackRef={givebackRef} addError={props.addError} resetError={props.resetError} cancelSpace={props.cancelSpace} arrow={arrow} />
         <Giveback setNewUser={props.setNewUser} givebackRef={givebackRef} newUser={props.newUser} addError={props.addError} resetError={props.resetError} cancelSpace={props.cancelSpace} arrow={arrow} />
 
-        <img className='logo' src={props.logo} alt="winwin logo" />
     </div>
 }
