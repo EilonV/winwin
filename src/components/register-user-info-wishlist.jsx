@@ -114,6 +114,6 @@ export const Wishlist = (props) => {
 
             </Swiper>
         </div>
-        <button onClick={handleInputs}>הבא</button>
+        <button onCick={handleInputs}>הבא</button>
     </div>)
 }

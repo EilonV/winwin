@@ -28,7 +28,6 @@ export const Login = () => {
             }, 1000);
         }
     }
-
     const handleSpacebar = (e) => {
         if (e.keyCode === 32) e.preventDefault()
     }
