@@ -7,6 +7,7 @@ import { Tests } from './pages/tests';
 import { Successful } from './pages/successful-register';
 import { Loader } from './pages/loader';
 import { Profile } from './pages/profile';
+import { Messages } from './pages/messages';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path='/test' element={<Tests />} />
       <Route path='/success' element={<Successful />} />
       <Route path='/profile' element={<Profile />} />
+      <Route path='/messages' element={<Messages />} />
     </Routes>
   )
 }

@@ -12,6 +12,11 @@
 @import 'setup/_fonts';
 
 // CMPS
+// HOME
+@import 'components/home/_wants.scss';
+@import 'components/home/_gives.scss';
+@import 'components/home/_give-want-lists.scss';
+
 // PROFILE
 @import 'components/profile/_user-info.scss';
 @import 'components/profile/_want-give.scss';
@@ -28,6 +33,7 @@
 
 // PAGES
 @import 'views/_loader.scss';
+@import 'views/_messages.scss';
 @import 'views/_home.scss';
 @import 'views/_success.scss';
 @import 'views/_test.scss';

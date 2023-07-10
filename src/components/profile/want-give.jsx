@@ -16,21 +16,21 @@ export const WantGive = (props) => {
     }
     return <div className="want-give flex column">
         <div>
-        <p>מצוי</p>
-        <div className="want">
-            {props.user && props.user.wishlist.map((wish) => {
-                return <div className="card wish" style={{ right: `${dist += 30}px`, zIndex: `${index--}` }} onClick={raise}>
-                    <h1>{wish.title}</h1>
-                    <p>{wish.content}</p>
-                </div>
-            })}
-        </div>
-        </div>
-        <div>
             <p>רצוי</p>
             <div className="give">
                 {props.user && props.user.giveback.map((wish) => {
                     return <div className="card to-give" style={{ right: `${giveDist += 30}px`, zIndex: `${index--}` }} onClick={raise}>
+                        <h1>{wish.title}</h1>
+                        <p>{wish.content}</p>
+                    </div>
+                })}
+            </div>
+        </div>
+        <div>
+            <p>מצוי</p>
+            <div className="want">
+                {props.user && props.user.wishlist.map((wish) => {
+                    return <div className="card wish" style={{ right: `${dist += 30}px`, zIndex: `${index--}` }} onClick={raise}>
                         <h1>{wish.title}</h1>
                         <p>{wish.content}</p>
                     </div>

@@ -5,6 +5,7 @@ import { localStorageService } from '../services/localstorage'
 export const Login = () => {
     let user = localStorageService.loadFromStorage('user')
     const navigate = useNavigate()
+    
     const handleLogin = (e) => {
         e.preventDefault()
         if (user) {
@@ -21,7 +22,7 @@ export const Login = () => {
                 }
             }
         }
-        if (e.target[0].value === user.email && e.target[1].value === user.password){
+        if (e.target[0].value === user.email && e.target[1].value === user.password) {
             setTimeout(() => {
                 navigate('/home')
             }, 1000);
