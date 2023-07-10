@@ -1,0 +1,52 @@
+.messages {
+    height: 100vh;
+    gap: 22px;
+    // .msg-images {
+    //     // position: relative;
+
+    //     img {
+    //         position: absolute;
+    //     }
+
+    // }
+    h1 {
+        font-size: 16px;
+    }
+
+    p {
+        line-height: 20px;
+    }
+
+    .imgs {
+        width: fit-content;
+        position: relative;
+        padding: 48px 32px;
+
+        .plane {
+            top: 80px;
+            left: 58px;
+            position: absolute;
+        }
+    }
+
+    nav {
+        position: absolute;
+        bottom: 49px;
+        margin-top: 20px;
+        display: flex;
+        gap: 13px;
+        padding: 17px 18px;
+        background-color: white;
+        border-radius: 47px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+        justify-content: center;
+
+        :nth-child(2) {
+            filter: invert(100%) sepia(100%) saturate(8466%) hue-rotate(10deg) brightness(94%) contrast(115%);
+        }
+
+        a {
+            filter: brightness(0) opacity(0.5);
+        }
+    }
+}
